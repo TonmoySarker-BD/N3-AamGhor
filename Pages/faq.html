@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমঘর - রাজশাহীর মিষ্টি আম এখন আপনার হাতের নাগালে</title>
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
+    <!-- Tailwind CSS + Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header class="fixed top-0 left-0 w-full z-50 px-[5%] bg-[#dcfce780] shadow-sm backdrop-blur-md">
+        <!-- Navbar Section -->
+        <div class="navbar">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="hover:bg-[#32ff7e70] p-2 rounded-md text-xl lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-green-200 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a class="hover:bg-[#32ff7e70]" href="../index.html">হোম</a></li>
+                        <li class="hover:bg-[#32ff7e70] "><a href="./product.html">পণ্যসমূহ</a></li>
+                        <li class="hover:bg-[#32ff7e70]"><a href="./about.html">আমাদের সম্পর্কে</a></li>
+                        <li class="hover:bg-[#32ff7e70] font-bold"><a href="./faq.html">প্রশ্ন ও উত্তর</a></li>
+
+                    </ul>
+                </div>
+                <a href="../index.html" class="text-xl flex items-center">
+                    <img src="../assets/logo.png" width="50" height="50" alt="">
+                    <span class="text-green-800 font-bold text-5xl">আমঘর</span>
+
+                </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal rounded-2xl px-1 text-green-800 text-xl">
+                    <li class="hover:bg-[#32ff7e70]"><a href="../index.html">হোম</a></li>
+                    <li class="hover:bg-[#32ff7e70] "><a href="./product.html">পণ্যসমূহ</a></li>
+                    <li class="hover:bg-[#32ff7e70] "><a href="./about.html">আমাদের সম্পর্কে</a></li>
+                    <li class="hover:bg-[#32ff7e70] font-bold"><a href="./faq.html">প্রশ্ন ও উত্তর</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end  ">
+                <div class="flex flex-col text-sm text-green-800 border-2 border-green-800 rounded-lg px-2 ">
+                    <p id="time"></p>
+                    <p id="date"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- main Section -->
+    <main class="mt-20">
+
+        <!-- Updated প্রশ্ন ও উত্তর Section for আমঘর -->
+        <section class="my-12 px-[5%] max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold text-green-700 text-center mb-10">প্রায়শই জিজ্ঞাসিত প্রশ্ন</h2>
+
+            <div class="space-y-4">
+
+                <!-- পূর্বের প্রশ্নগুলো -->
+
+                <!-- Q1 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-green-300">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold bg-green-100 text-green-800">
+                        আপনারা কোন ধরণের আম বিক্রি করেন?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        <p>আমরা শুধুমাত্র রাজশাহীর বাগান থেকে সংগৃহীত, প্রাকৃতিকভাবে গাছপাকা এবং ফরমালিনমুক্ত আম বিক্রি
+                            করি। আমাদের আমের কিছু জনপ্রিয় জাত:</p>
+                        <ul class="list-disc pl-6 mt-2">
+                            <li><strong>হাড়িভাঙ্গা:</strong> সুগন্ধি, রসালো এবং টক-মিষ্টি স্বাদের জন্য বিখ্যাত।</li>
+                            <li><strong>ফজলি:</strong> বড় ও কম আঁশযুক্ত আম, দেরিতে পাকলেও স্বাদে অতুলনীয়।</li>
+                            <li><strong>গোপালভোগ:</strong> মৌসুমের শুরুর দিকে পাওয়া যায়, নরম ও সুগন্ধি।</li>
+                            <li><strong>আম্রপালি:</strong> আঁশবিহীন, গাঢ় রঙের এবং সংরক্ষণের জন্য আদর্শ।</li>
+                            <li><strong>ল্যাংড়া:</strong> রাজশাহীর অন্যতম জনপ্রিয় জাত, মিষ্টি ও সুগন্ধি।</li>
+                        </ul>
+                        <p class="mt-3">প্রতিটি আম আমরা প্যাক করার আগে যাচাই করি যাতে মান ও সতেজতা নিশ্চিত হয়।</p>
+                    </div>
+                </div>
+
+                <!-- Q2 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-green-300">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold bg-green-100 text-green-800">
+                        সারা বাংলাদেশে কি ডেলিভারি দেন?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        <p>হ্যাঁ, আমরা বাংলাদেশের যেকোনো প্রান্তে ডেলিভারি দেই। প্রতিটি অর্ডার নিরাপদভাবে প্যাক করে
+                            কুরিয়ার বা পার্সেল সার্ভিসের মাধ্যমে পাঠানো হয়, যাতে আম সতেজ ও অক্ষত অবস্থায় আপনার হাতে
+                            পৌঁছায়।</p>
+                    </div>
+                </div>
+
+                <!-- Q3 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-green-300">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold bg-green-100 text-green-800">
+                        আপনারা কি গাছপাকা আম সরবরাহ করেন?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        <p>আমরা শুধুমাত্র গাছপাকা ও প্রাকৃতিকভাবে পরিপক্ক আম সরবরাহ করি। কৃত্রিম রাসায়নিক বা কার্বাইড
+                            ব্যবহার না করে আমরা প্রকৃত স্বাদের দিকে গুরুত্ব দেই।</p>
+                    </div>
+                </div>
+
+                <!-- Q4 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-green-300">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold bg-green-100 text-green-800">
+                        অর্ডার করতে কতদিন আগে জানাতে হবে?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        <p>সাধারণত অর্ডারের ১-২ দিন আগেই জানালে আমরা দ্রুত প্রসেস করতে পারি। তবে মৌসুমের ব্যস্ত সময়ে
+                            ৩-৫ দিন আগে অর্ডার করলে নিশ্চিতভাবে পছন্দের জাতের আম পাওয়া যায়।</p>
+                    </div>
+                </div>
+
+                <!-- Q5 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-green-300">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold bg-green-100 text-green-800">
+                        পেমেন্ট কীভাবে করতে হয়?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        <p>
+                            আমরা বিভিন্ন ধরণের পেমেন্ট পদ্ধতি গ্রহণ করি যেন আপনি সহজেই আপনার পছন্দ অনুযায়ী লেনদেন করতে
+                            পারেন। আপনি আমাদের বিকাশ, নগদ, রকেট অথবা ব্যাংক ট্রান্সফার অপশন ব্যবহার করে পেমেন্ট করতে
+                            পারবেন।
+                            অধিকাংশ ক্ষেত্রে অগ্রিম পেমেন্ট গ্রহণ করা হয়, তবে নির্ভরযোগ্য গ্রাহকদের জন্য ক্যাশ অন
+                            ডেলিভারির সুবিধাও রাখা হয়েছে।
+                        </p>
+                        <p class="mt-2">পেমেন্ট নিশ্চিত হওয়ার পর অর্ডার প্রসেস শুরু হয় এবং প্যাকেজিং ও শিপমেন্ট দ্রুত
+                            সম্পন্ন করা হয়।</p>
+                    </div>
+                </div>
+
+                <!-- Q6 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-green-300">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold bg-green-100 text-green-800">
+                        অর্ডারের পর কিভাবে ট্র্যাক করবো?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        <p>
+                            অর্ডার কনফার্ম হওয়ার পর আমরা আপনাকে কুরিয়ার সার্ভিসের ট্র্যাকিং নম্বর প্রদান করি। আপনি সেটি
+                            ব্যবহার করে অনলাইনে কুরিয়ার কোম্পানির ওয়েবসাইটে গিয়ে আপনার প্যাকেজের অবস্থান জানতে পারবেন।
+                        </p>
+                        <p class="mt-2">আপনার যদি ট্র্যাকিং সংক্রান্ত কোনো জিজ্ঞাসা থাকে, আমাদের কাস্টমার কেয়ার টিম
+                            সর্বদা সহায়তা করতে প্রস্তুত।</p>
+                    </div>
+                </div>
+
+                <!-- Q7 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-green-300">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold bg-green-100 text-green-800">
+                        আম কীভাবে সংরক্ষণ করবো?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        <p>
+                            গাছপাকা আম রুম টেম্পারেচারে (২০-২৫ ডিগ্রি সেলসিয়াস) ২-৩ দিন পর্যন্ত ভালো থাকে।
+                            বেশি দিন সংরক্ষণের জন্য ঠান্ডা ও বাতাস চলাচল করে এমন জায়গায় রাখতে হবে, যেমন ফ্রিজের নিচের
+                            ড্রয়ার।
+                            তবে ফ্রিজে রাখলে আম কিছুটা শক্ত হয়ে যেতে পারে, তাই খাওয়ার ১ ঘণ্টা আগে বের করে রাখলে আসল
+                            স্বাদ ফিরে আসে।
+                        </p>
+                        <p class="mt-2">প্যাকেট খুলে আমগুলো আলাদা করে একটি জায়গায় ছড়িয়ে রাখলে সেগুলো দীর্ঘদিন ভালো থাকে।
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Q8 -->
+                <div class="collapse collapse-arrow bg-base-100 border border-green-300">
+                    <input type="checkbox" />
+                    <div class="collapse-title font-semibold bg-green-100 text-green-800">
+                        আম কীভাবে প্যাক করা হয়?
+                    </div>
+                    <div class="collapse-content text-sm text-gray-700">
+                        <p>
+                            প্রতিটি অর্ডার বিশেষভাবে প্যাক করা হয় যাতে ডেলিভারির সময় আম নষ্ট না হয়।
+                            আমরা ব্যবহার করি শক্ত কার্টন বক্স, প্রতিটি আম আলাদা করে খালি কাগজ বা ফোম প্যাডিং দিয়ে
+                            মোড়ানো হয় যাতে চাপ পড়ে না।
+                            বাইরে থেকে বৃষ্টি বা আঘাতের হাত থেকেও সুরক্ষা থাকে।
+                        </p>
+                        <p class="mt-2">প্রতিটি জাত ও ওজন অনুযায়ী প্যাকেট তৈরি করা হয় এবং পাঠানোর পূর্বে সেগুলো যাচাই
+                            করা হয়।</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+
+
+
+        <!--Contact Form -->
+        <Section>
+            <fieldset class="fieldset text-center bg-green-50 border-green-300 rounded-box border p-4 mx-[30%]">
+                <h2 class="text-3xl font-bold text-green-700 mb-6">Contact Us</h2>
+                <form id="contactForm" class="grid gap-4">
+                    <input type="text" placeholder="Name" class="input input-bordered w-full" required />
+                    <input type="email" placeholder="Email" class="input input-bordered w-full" required />
+                    <textarea placeholder="Message" class="textarea textarea-bordered w-full" rows="4"
+                        required></textarea>
+
+                    <div class="flex justify-center">
+                        <button type="submit" id="submit-btn" class="btn btn-success w-1/2">Submit</button>
+                    </div>
+                </form>
+
+            </fieldset>
+        </Section>
+
+        <!-- Modal Structure  + go js file-->
+        <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+        <div class="modal" role="dialog">
+            <div class="modal-box bg-green-100">
+                <h3 class="text-lg font-bold">Thank you!</h3>
+                <p class="py-4">Your message has been submitted successfully.</p>
+                <div class="modal-action">
+                    <label for="my_modal_7" class="btn btn-success">Close</label>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+
+  <!-- Footer Section -->
+  <footer class="bg-green-100 text-green-900 py-10 px-[5%] mt-16">
+    <div class="">
+      <div class="flex flex-col md:flex-row justify-between">
+
+<<<<<<< HEAD
+                <!-- Brand & Description -->
+                <div>
+                    <a href="./index.html" class="text-xl flex items-center">
+                        <img src="../assets/logo.png" width="50" height="50" alt="">
+                        <span class="text-green-800 font-bold text-5xl">আমঘর</span>
+                    </a>
+                    <p class="text-sm">
+                        রাজশাহীর বিখ্যাত মিষ্টি আমের স্বাদ এখন ঘরে বসেই উপভোগ করুন! <br> সরাসরি বাগান থেকে সংগ্রহ করা
+                        তাজা, রসালো ও <br> নিরাপদ আম পৌঁছে যাবে আপনার দরজায় — কোনো ঝামেলা ছাড়াই।
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="./index.html" class="hover:text-green-600">হোম</a></li>
+                        <li><a href="./Pages/product.html" class="hover:text-green-600">পণ্যসমূহ</a></li>
+                        <li><a href="./Pages/about.html" class="hover:text-green-600">আমাদের সম্পর্কে Us</a></li>
+                        <li><a href="./Pages/faq.html" class="hover:text-green-600">প্রশ্ন ও উত্তর</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Social -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-3">Contact Us</h3>
+                    <p class="text-sm mb-2">Email: support@amghor.com</p>
+                    <p class="text-sm mb-4">Phone: +880123456789</p>
+                    <div class="flex space-x-4 text-2xl text-green-800">
+                        <a href="https://www.facebook.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-facebook-f hover:text-green-600"></i></a>
+                        <a href="https://x.com/TonmoySarkerBD/" target="_blank"><i
+                                class="fa-brands fa-x-twitter hover:text-green-600"></i></a>
+                        <a href="https://www.instagram.com/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-instagram hover:text-green-600"></i></a>
+                        <a href="https://www.linkedin.com/in/tonmoysarkerbd/" target="_blank"><i
+                                class="fa-brands fa-linkedin-in hover:text-green-600"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="mt-10 border-t border-green-300 pt-4 text-sm text-center">
+                &copy; 2025 আমঘর. All rights reserved By <a href="https://www.tonmoysarker.com">@TonmoySarkerBD</a>.
+            </div>
+=======
+        <!-- Brand & Description -->
+        <div>
+          <a href="./index.html" class="text-xl flex items-center">
+          <img src="../assets/logo.png" width="50" height="50" alt="">
+          <span class="text-green-800 font-bold text-5xl">আমঘর</span>
+        </a>
+          <p class="text-sm">
+            রাজশাহীর বিখ্যাত মিষ্টি আমের স্বাদ এখন ঘরে বসেই উপভোগ করুন! <br> সরাসরি বাগান থেকে সংগ্রহ করা তাজা, রসালো ও <br> নিরাপদ আম পৌঁছে যাবে আপনার দরজায় — কোনো ঝামেলা ছাড়াই।
+          </p>
+>>>>>>> 02c132e (Fixed Header and Footer)
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="./index.html" class="hover:text-green-600">Home</a></li>
+            <li><a href="./Pages/product.html" class="hover:text-green-600">Products</a></li>
+            <li><a href="./Pages/about.html" class="hover:text-green-600">About Us</a></li>
+            <li><a href="./Pages/faq.html" class="hover:text-green-600">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Contact Us</h3>
+          <p class="text-sm mb-2">Email: support@amghor.com</p>
+          <p class="text-sm mb-4">Phone: +880123456789</p>
+          <div class="flex space-x-4 text-2xl text-green-800">
+            <a href="https://www.facebook.com/TonmoySarkerBD/" target="_blank"><i
+                class="fa-brands fa-facebook-f hover:text-green-600"></i></a>
+            <a href="https://x.com/TonmoySarkerBD/" target="_blank"><i
+                class="fa-brands fa-x-twitter hover:text-green-600"></i></a>
+            <a href="https://www.instagram.com/tonmoysarkerbd/" target="_blank"><i
+                class="fa-brands fa-instagram hover:text-green-600"></i></a>
+            <a href="https://www.linkedin.com/in/tonmoysarkerbd/" target="_blank"><i
+                class="fa-brands fa-linkedin-in hover:text-green-600"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="mt-10 border-t border-green-300 pt-4 text-sm text-center">
+        &copy; 2025 আমঘর. All rights reserved By <a
+          href="https://www.tonmoysarker.com">@TonmoySarkerBD</a>.
+      </div>
+    </div>
+  </footer>
+
+
+
+    <script src="../Js/script.js"></script>
+    <script>
+        const form = document.getElementById('contactForm');
+        const modalCheckbox = document.getElementById('my_modal_7');
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            form.reset();
+            modalCheckbox.checked = true;
+        });
+    </script>
+</body>
+
+</html>

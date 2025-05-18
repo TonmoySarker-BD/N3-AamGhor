@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Name" content="Aam Ghor">
+  <meta name="description"
+    content="রাজশাহীর খাঁটি আম সরাসরি বাগান থেকে ঘরে পৌঁছে দিচ্ছে আমঘর। এখন হিমসাগর, ল্যাংড়া, ফজলি সহ প্রিমিয়াম জাতের রাসায়নিকমুক্ত আম অর্ডার করুন।">
+
+  <title>আমঘর - রাজশাহীর মিষ্টি আম এখন আপনার হাতের নাগালে</title>
+  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <!-- Tailwind CSS + Daisy UI -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./Styles/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header class="fixed top-0 left-0 w-full z-50 px-[5%] bg-[#dcfce780] shadow-sm backdrop-blur-md">
+    <!-- Navbar Section -->
+    <div class="navbar">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="hover:bg-[#32ff7e70] p-2 rounded-md text-xl lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-green-200 rounded-box z-1 mt-3 w-52 p-2 shadow">
+            <li><a class="hover:bg-[#32ff7e70] font-bold" href="./index.html">হোম</a></li>
+            <li class="hover:bg-[#32ff7e70]"><a href="./Pages/product.html">পণ্যসমূহ</a></li>
+            <li class="hover:bg-[#32ff7e70]"><a href="./Pages/about.html">আমাদের সম্পর্কে</a></li>
+            <li class="hover:bg-[#32ff7e70]"><a href="./Pages/faq.html">প্রশ্ন ও উত্তর</a></li>
+
+          </ul>
+        </div>
+        <a href="./index.html" class="text-xl flex items-center">
+          <img src="./assets/logo.png" width="50" height="50" alt="">
+          <span class="text-green-800 font-bold text-5xl">আমঘর</span>
+
+        </a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal rounded-2xl px-1 text-green-800 text-xl">
+          <li class="hover:bg-[#32ff7e70] font-bold"><a href="./index.html">হোম</a></li>
+          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/product.html">পণ্যসমূহ</a></li>
+          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/about.html">আমাদের সম্পর্কে</a></li>
+          <li class="hover:bg-[#32ff7e70] "><a href="./Pages/faq.html">প্রশ্ন ও উত্তর</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end  ">
+        <div class="flex flex-col text-sm text-green-800 border-2 border-green-800 rounded-lg px-2 ">
+          <p id="time"></p>
+          <p id="date"></p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Section -->
+  <main>
+
+    <!-- Banner Section -->
+    <div id="hero" class="hero min-h-screen transition-all duration-700 ease-in-out bg-cover bg-center">
+      <div class="hero-overlay bg-opacity-60"></div>
+      <div class="hero-content text-center text-neutral-content">
+        <div class="max-w-2xl px-4">
+          <h1 class="mb-5 text-4xl md:text-5xl font-bold">রাজশাহীর মিষ্টি আম এখন আপনার হাতের নাগালে</h1>
+          <p class="mb-5 text-base md:text-lg">
+            আমঘরে আপনি পাবেন হিমসাগর, ল্যাংড়া, ফজলি, আম্রপালি সহ বিভিন্ন প্রিমিয়াম জাতের রাজশাহীর আসল আম, যা ১০০%
+            রাসায়নিক মুক্ত এবং স্বাদে ভরপুর।
+          </p>
+          <a href="#product-f">
+            <button class="btn bg-[#32ff7e70] hover:bg-[#32ff7eb0] border-none text-white">অর্ডার করুন</button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Section -->
+    <section id="product-f" class="my-24 mx-[5%] pt-16">
+      <h2 class="text-3xl text-center font-bold text-green-700 mb-10">🥭 আমাদের পণ্য</h2>
+
+      <div class=" gap-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ">
+        <!-- card 1 -->
+        <div class="card bg-base-100 hover:bg-green-100 w-full shadow-sm">
+          <figure>
+            <img src="./assets/app.png" alt="হিমসাগর আমের ছবি" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">🥭হিমসাগর আম</h2>
+            <p>স্বাদের রাজা, রাজশাহীর গর্ব!
+              <br><br>
+              <b>হিমসাগর আম : </b> হিমসাগর মানেই খাঁটি রাজশাহী আমের স্বাদ – যা একবার মুখে দিলেই মন ছুঁয়ে যায়।
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-success btn-sm">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card bg-base-100 hover:bg-green-100 w-full shadow-sm">
+          <figure>
+            <img src="./assets/soil.png" alt="IoT Soil Sensor Kit" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">🍃 ল্যাংড়া আম</h2>
+            <p>একবার খেলে, স্বাদ থাকবে মনে সারাবছর
+              <br><br>
+              <b>ল্যাংড়া আম: </b> রাজশাহীর অন্যতম পুরনো ও জনপ্রিয় আমের জাত। এর ঘ্রাণ এতটাই মনকাড়া যে একবার খেলেই মুখে
+              লেগে থাকে সেই স্মৃতি।
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-success btn-sm">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card bg-base-100 hover:bg-green-100 w-full shadow-sm">
+          <figure>
+            <img src="./assets/Fertilizer.png" alt="Organic Fertilizer Pack" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">🍯 আম্রপালি আম</h2>
+            <p>মিষ্টি ও দীর্ঘস্থায়ী স্বাদের আধার!<br><br>
+              <b>আম্রপালি আম : </b> আম্রপালি আম একটি হাইব্রিড জাত, যা স্বাদে খুবই মিষ্টি ও দেখতে লোভনীয়। ছোট আকৃতির
+              হলেও এর ঘন শাঁস ও চমৎকার ঘ্রাণ একে বিশেষ করে তোলে।
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-success btn-sm">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+        <!-- card 4 -->
+        <div class="card bg-base-100 hover:bg-green-100 w-full shadow-sm">
+          <figure>
+            <img src="./assets/drone.png" alt="Agro Drone Services" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title">🥭 ফজলি আম</h2>
+            <p>আকারে বড়, খেতে রাজকীয়!<br><br>
+              <b>ফজলি আম : </b> ফজলি আম তার বিশাল আকার, হালকা মিষ্টতা এবং মন ভরানো স্বাদের জন্য বিখ্যাত। যারা একটু কম
+              মিষ্টি কিন্তু শাঁসভরা আম পছন্দ করেন, তাদের জন্য ফজলি আদর্শ।
+            </p>
+            <div class="card-actions justify-end">
+              <button class="btn btn-success btn-sm">অর্ডার করুন</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="my-24 mx-[5%] pt-16 text-center">
+      <h2 class="text-3xl font-bold text-green-700 mb-10"> 🥭 আমঘর সম্পর্কে মানুষ কী বলে</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto">
+
+        <div class="card bg-green-50 shadow-md p-6 border border-green-200">
+          <div class="card-body items-center text-center">
+            <p class="italic text-gray-700">
+              "এই প্রথম অনলাইনে আম অর্ডার করলাম, আর সত্যি বলতে কি, এমন টাটকা আর মিষ্টি ল্যাংড়া আম আগে কখনও খাইনি! কোনো
+              ফরমালিনের গন্ধ নেই, একদম বাগান থেকে তোলা বলেই মনে হলো। প্যাকেজিংও ছিল দারুন। ধন্যবাদ আমঘরকে – এবার থেকে আম
+              মানেই আমঘর!"
+            </p>
+            <h4 class="mt-4 font-semibold text-green-800">— মাহমুদুল হাসান, ঢাকা</h4>
+          </div>
+        </div>
+
+        <div class="card bg-green-50 shadow-md p-6 border border-green-200">
+          <div class="card-body items-center text-center">
+            <p class="italic text-gray-700">
+              "হিমসাগর আমগুলো এক কথায় অসাধারণ! প্রতিটি আমই পরিপক্ক, মিষ্টি আর আঁশমুক্ত। এতদিন ধরে বাজার থেকে কিনতাম,
+              কিন্তু এখন বুঝতে পারছি আসল রাজশাহীর আমের স্বাদ কেমন!"
+            </p>
+            <h4 class="mt-4 font-semibold text-green-800">— রিফাত জাহান, চট্টগ্রাম</h4>
+          </div>
+        </div>
+
+        <div class="card bg-green-50 shadow-md p-6 border border-green-200">
+          <div class="card-body items-center text-center">
+            <p class="italic text-gray-700">
+              "আম্রপালি আমের স্বাদ ছিল একেবারে মুখে লেগে থাকার মতো! ছোট আকার হলেও ভিতরটা একদম রসে ভরা, মিষ্টি আর ঘ্রাণে
+              ভরপুর। সত্যি বলতে কি, ‘আমঘর’ আমার মন জয় করে নিয়েছে।"
+            </p>
+            <h4 class="mt-4 font-semibold text-green-800">— সামিরা হোসেন,খুলনা</h4>
+          </div>
+        </div>
+
+        <div class="card bg-green-50 shadow-md p-6 border border-green-200">
+          <div class="card-body items-center text-center">
+            <p class="italic text-gray-700">
+              "ডেলিভারিটা সময়মতো পেয়েছি, আর প্যাকেজিং এত সুন্দর ছিল যে একটাও আম ক্ষতিগ্রস্ত হয়নি। আমার বাসার সবাই খেয়ে
+              খুব খুশি। এবার ঈদ উপহার হিসেবে আত্মীয়দেরও পাঠাবো।"
+            </p>
+            <h4 class="mt-4 font-semibold text-green-800">— মোহাম্মদ নাবিল, নরসিংদী</h4>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="my-24 mx-[5%] pt-16 text-center">
+      <h2 class="text-3xl font-bold text-green-700 mb-10">কার্যক্রমের চিত্র – 🥭আমঘর </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto">
+
+        <!-- Gallery Item -->
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/drone.png" alt="Drone spraying over field" class="w-full h-80 sm:h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">🥭 ফজলি আম</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">🥭 ফজলি আম</p>
+        </div>
+
+        <!-- Repeat for each item -->
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/soil.png" alt="IoT Soil Sensor Kit in field" class="w-full h-80 sm:h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">🍃 ল্যাংড়া আম</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">🍃 ল্যাংড়া আম</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/app.png" alt="হিমসাগর  আম 🍯 UI" class="w-full h-80 sm:h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">হিমসাগর আম 🍯</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">হিমসাগর আম 🍯</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/s4.jpg" alt="Traditional vs Smart" class="w-full h-80 sm:h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">হাড়িভাঙ্গা আম 🥭</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">হাড়িভাঙ্গা আম 🥭</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/Fertilizer.png" alt="🍯 আম্রপালি আম" class="w-full h-80 sm:h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">🍯 আম্রপালি আম</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">🍯 আম্রপালি আম</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/s1.jpg" alt="🥭 গোপালভোগ আম" class="w-full h-80 sm:h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">🥭 গোপালভোগ আম</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">🥭 গোপালভোগ আম</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/s2.jpg" alt="Product in Fields" class="w-full h-80 sm:h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] bg-opacity-50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">🥭 ফজলি আম</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">🥭 ফজলি আম</p>
+        </div>
+
+        <div class="relative group rounded-xl overflow-hidden shadow-lg">
+          <img src="./assets/s3.jpg" alt="Training Event" class="w-full h-80 sm:h-96 object-cover">
+          <div
+            class="absolute inset-0 bg-[#1665349e] opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-300">
+            <p class="text-white text-2xl font-semibold">আম গাছ 🥭</p>
+          </div>
+          <p class="py-2 font-medium text-green-800 bg-green-50 md:hidden">আম গাছ 🥭</p>
+        </div>
+
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-green-100 text-green-900 py-10 px-[5%] mt-16">
+    <div class="">
+      <div class="flex flex-col md:flex-row justify-between">
+
+        <!-- Brand & Description -->
+        <div>
+          <a href="./index.html" class="text-xl flex items-center">
+<<<<<<< HEAD
+            <img src="./assets/logo.png" width="50" height="50" alt="">
+            <span class="text-green-800 font-bold text-5xl">আমঘর</span>
+          </a>
+=======
+          <img src="./assets/logo.png" width="50" height="50" alt="">
+          <span class="text-green-800 font-bold text-5xl">আমঘর</span>
+        </a>
+>>>>>>> 02c132e (Fixed Header and Footer)
+          <p class="text-sm">
+            রাজশাহীর বিখ্যাত মিষ্টি আমের স্বাদ এখন ঘরে বসেই উপভোগ করুন! <br> সরাসরি বাগান থেকে সংগ্রহ করা তাজা, রসালো ও
+            <br> নিরাপদ আম পৌঁছে যাবে আপনার দরজায় — কোনো ঝামেলা ছাড়াই।
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="./index.html" class="hover:text-green-600">হোম</a></li>
+            <li><a href="./Pages/product.html" class="hover:text-green-600">পণ্যসমূহ</a></li>
+            <li><a href="./Pages/about.html" class="hover:text-green-600">আমাদের সম্পর্কে</a></li>
+            <li><a href="./Pages/faq.html" class="hover:text-green-600">প্রশ্ন ও উত্তর</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact & Social -->
+        <div>
+          <h3 class="text-xl font-semibold mb-3">Contact Us</h3>
+          <p class="text-sm mb-2">Email: support@amghor.com</p>
+          <p class="text-sm mb-4">Phone: +880123456789</p>
+          <div class="flex space-x-4 text-2xl text-green-800">
+            <a href="https://www.facebook.com/TonmoySarkerBD/" target="_blank"><i
+                class="fa-brands fa-facebook-f hover:text-green-600"></i></a>
+            <a href="https://x.com/TonmoySarkerBD/" target="_blank"><i
+                class="fa-brands fa-x-twitter hover:text-green-600"></i></a>
+            <a href="https://www.instagram.com/tonmoysarkerbd/" target="_blank"><i
+                class="fa-brands fa-instagram hover:text-green-600"></i></a>
+            <a href="https://www.linkedin.com/in/tonmoysarkerbd/" target="_blank"><i
+                class="fa-brands fa-linkedin-in hover:text-green-600"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom -->
+      <div class="mt-10 border-t border-green-300 pt-4 text-sm text-center">
+<<<<<<< HEAD
+        &copy; 2025 আমঘর. All rights reserved By <a href="https://www.tonmoysarker.com">@TonmoySarkerBD</a>.
+=======
+        &copy; 2025 আমঘর. All rights reserved By <a
+          href="https://www.tonmoysarker.com">@TonmoySarkerBD</a>.
+>>>>>>> 02c132e (Fixed Header and Footer)
+      </div>
+    </div>
+  </footer>
+
+  <script src="./Js/script.js"></script>
+</body>
+
+</html>
