@@ -58,11 +58,9 @@ amghor/
 ---
 
 ## 📷 স্ক্রিনশট
-```
 <div style="text-align:center">
-<img src="./assets/screenshot-home.png" alt="আমঘর হোমপেজ" width="80%">
+<img src="./assets/screenshot-home.png" alt="আমঘর হোমপেজ">
 </div>
-```
 
 ---
 
